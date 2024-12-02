@@ -13,7 +13,6 @@ const Blog = ({ blog, updateBlog, isBlogPoster, deleteBlog }) => {
 
   const handleLike = async () => {
     const updatedBlog = { ...blog, likes: blog.likes + 1 };
-    console.log({ updatedBlog });
     updateBlog(updatedBlog);
   };
 

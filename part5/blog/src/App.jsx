@@ -79,7 +79,6 @@ const App = () => {
   const deleteBlog = async (id, title) => {
     try {
       if (window.confirm(`Are you sure want to delete ${title}?`)) {
-        console.log('here');
         await blogService.deleteBlog(id);
         setNotificationMessage(`${title} has been deleted.`);
         setNotificationType('success');
